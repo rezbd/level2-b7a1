@@ -1,5 +1,4 @@
 // solution 1
-
 function filterEvenNumbers(data: number[]): number[] {
     let newArray: number[] = [];
     if(Array.isArray(data) && data.length){
@@ -9,11 +8,21 @@ function filterEvenNumbers(data: number[]): number[] {
 }
 
 // solution 2
-
 function reverseString(data: string): string{
     let newString = "";
     for(let i=data.length-1; i>=0; i--){
         newString = newString+data[i];
     }
     return newString;
+}
+
+// solution 3
+type StringOrNumber = string | number;
+
+function checkType(data: StringOrNumber) {
+    if(typeof data === "string"){
+        return "String";
+    }else{
+        return "Number";
+    }
 }
