@@ -7,3 +7,13 @@ function filterEvenNumbers(data: number[]): number[] {
     }
     return newArray;
 }
+
+// solution 2
+
+function reverseString(data: string): string{
+    let newString = "";
+    for(let i=data.length-1; i>=0; i--){
+        newString = newString+data[i];
+    }
+    return newString;
+}
