@@ -17,6 +17,4 @@ function handleData(data: unknown) {
 }
 ```
 
-So it is better to use `unknown` + type narrowing when we are dealing with unpredictable data.
-
-So it is better to avoid `any` as much as possible, especially in a large codebase.
+So it is better to use `unknown` + type narrowing when we are dealing with unpredictable data, and it is better to avoid `any` as much as possible, especially in a large codebase.
